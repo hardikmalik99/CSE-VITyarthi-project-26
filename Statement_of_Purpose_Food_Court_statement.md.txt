@@ -1,0 +1,53 @@
+## 🎯 Statement of Purpose: Food Court Management System
+
+---
+
+## 1. Problem Statement
+
+Modern food court environments, characterized by high customer traffic and diverse ordering needs, require an efficient system to manage customer data, streamline the ordering process, and provide actionable insights for business improvement. The current method often involves manual tracking or fragmented systems, leading to slow service, inaccurate data collection, and difficulty in analyzing popular trends and customer behavior. The core problem is the lack of a unified, automated, and data-driven platform for managing customer transactions and deriving key business intelligence.
+
+---
+
+## 2. Scope of the Project
+
+The scope of the **Food Court Management System** is a console-based application focused on core operational and analytical functions within a single food court setting.
+
+### In Scope:
+* **Customer Profile Management:** Creation and storage of basic customer demographics (name, age, city, country).
+* **Order Transaction Handling:** Recording item, quantity, and linking orders to specific customer profiles.
+* **Billing:** Calculation of the total bill based on menu prices and quantities.
+* **Basic Feedback:** Capturing a simple customer rating.
+* **Data Analysis and Visualization:** Generation of visual reports (bar charts, pie charts, histograms) for internal business intelligence, specifically focusing on orders, customer distribution, and bill amounts.
+
+### Out of Scope:
+* Integration with Point of Sale (POS) hardware or external payment gateways.
+* Real-time inventory management.
+* User authentication (beyond the initial 'user' or 'employee' selection).
+* Advanced security or encryption features.
+* A graphical user interface (GUI); the system remains console-based.
+
+---
+
+## 3. Target Users
+
+The system is designed to cater to two primary user groups with distinct needs and functionalities:
+
+1.  **Customers (Users):**
+    * **Need:** Quick, accurate placement of food orders and a simple means to provide service feedback.
+    * **Functionality Used:** Creating profiles, viewing the menu, placing orders, and submitting ratings.
+
+2.  **Food Court Management/Staff (Employees):**
+    * **Need:** Access to raw operational data (profiles, orders) and visualized insights to make data-driven decisions on menu planning, marketing efforts, and service quality.
+    * **Functionality Used:** Fetching database records and generating analytical charts (popular items, customer distribution, bill distribution).
+
+---
+
+## 4. High-Level Features
+
+| Feature Category | High-Level Feature | Description |
+| :--- | :--- | :--- |
+| **Customer Interaction** | **Profile Creation & Storage** | Allows new users to input and save personal demographic information to the SQLite database. |
+| **Order Processing** | **Menu Display and Order Capture** | Presents the full menu and accurately records customer item selections and quantities. |
+| **Financial** | **Automatic Bill Generation** | Calculates and displays the total amount due based on the recorded order and menu prices. |
+| **Data Persistence** | **SQLite Database Management** | Utilizes an SQLite database for reliable, non-volatile storage of all profiles and order records. |
+| **Business Intelligence** | **Visual Data Analytics** | Enables employees to generate insightful charts (e.g., popular items, customer city distribution) using Matplotlib for decision-making. |
